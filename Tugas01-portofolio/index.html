@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Daffa</title>
+</head>
+<body>
+
+    
+    <video class="makoto-bg-video" autoplay loop muted playsinline>
+      <source src="https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4" type="video/mp4">
+    </video>
+    <div class="water-overlay"></div>
+
+    <div class="welcome-panel" id="welcomePanel">
+      <h1> My portofolio</h1>
+    </div>
+
+    <div class="menu-layout" id="menuLayout">
+      <div class="nav-panel">
+        <div class="nav-item" onclick="openSection('profile')">Profile</div>
+        <div class="nav-item" onclick="openSection('skills')">Skills</div>
+        <div class="nav-item" onclick="openSection('projects')">Projects</div>
+        <div class="nav-item" onclick="openSection('contact')">Contact</div>
+      </div>
+    </div>
+
+    <div class="content-container" id="contentDrawer">
+      <div class="content-inner">
+        
+        <div class="content-section" id="profile">
+          <h2>Overview Profil</h2>
+          <p>Halo, saya Daffa! Seorang developer, pelajar, dan tech-enthusiast yang berbasis di Balikpapan, Indonesia. Saya mendedikasikan waktu untuk mempelajari seluk-beluk full-stack development, arsitektur database, dan rekayasa perangkat lunak modern.</p>
+          <p>Selain menulis kode terstruktur, saya aktif dalam kompetisi debat kompetitif nasional serta menyukai optimasi performa game teknikal seperti Minecraft mechanics, counter strike dan series persona.</p>
+        </div>
+
+        <div class="content-section" id="skills">
+          <h2>Tech Arsenal</h2>
+          <p>Teknologi dan kerangka kerja yang rutin saya gunakan untuk membangun aplikasi performan, responsif, dan interaktif:</p>
+          <div class="grid-layout">
+            <div class="skill-card"><span>C#</span></div>
+            <div class="skill-card"><span>Python</span></div>
+            <div class="skill-card"><span>Laravel</span></div>
+          </div>
+        </div>
+
+        <div class="content-section" id="projects">
+          <h2>Missions & Artifacts</h2>
+          <p>Beberapa proyek pengembangan sistem yang berhasil saya rancang:</p>
+          <div class="project-block">
+            <h3>Membuat Website Laravel Perpustakaan digital</h3>
+            <p>Platform katalog perpustakaan digital interaktif dengan integrasi modul pencarian dinamis, dashboard login, serta interface modern.</p>
+          </div>
+          <div class="project-block">
+            <h3>Membuat game 2D</h3>
+            <p>Membuat website turnbase 2D menggunakan Unity/Godot dengan menggunakan C#</p>
+          </div>
+        </div>
+
+        <div class="content-section" id="contact">
+          <h2>Initiate Link</h2>
+          <p>Tertarik untuk berkolaborasi, berdiskusi mengenai arsitektur sistem, atau sekadar bertukar taktik debat politik atau teknologi? Hubungi saya kapan saja!</p>
+          <p style="font-weight: bold; color: #00d4ff; font-size: 18px; margin-top: 20px;">Email: anggarasanjayadaffarizky@gmail.com</p>
+          <p style="font-weight: bold; color: #ff0055; font-size: 18px;">GitHub: https://github.com/Azure75</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-guide" id="footerGuide">
+      <div class="guide-btn" id="selectBtn"><span class="icon">E</span> Select</div>
+      <div class="guide-btn" id="backBtn" onclick="closeSection()"><span class="icon">Q</span> Back</div>
+      
+    </div>
+  </div>
+
+  <iframe id="ytBgm" src="https://www.youtube.com/embed/j9Sn1nFGQQ8?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=j9Sn1nFGQQ8" style="display:none;" allow="autoplay"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
