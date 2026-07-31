@@ -1,0 +1,23 @@
+/* Minimal styles for simple portfolio */
+*{box-sizing:border-box}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;margin:0;color:#0b1220;background:#f8fafc}
+.wrap{max-width:800px;margin:0 auto;padding:1rem}
+header{background:white;border-bottom:1px solid #e6eef8}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:1.1rem;margin:0}
+nav a{margin-left:0.75rem;color:#0b1220;text-decoration:none}
+
+main{padding:1.25rem 0}
+h2{margin-top:0}
+ul{padding-left:1.25rem}
+
+form{display:flex;flex-direction:column;gap:0.5rem;max-width:420px}
+input,textarea{padding:0.5rem;border:1px solid #e2e8f0;border-radius:6px}
+button{padding:0.6rem;border-radius:6px;border:0;background:#2563eb;color:white}
+
+footer{padding:1rem 0;text-align:center;color:#64748b;font-size:0.95rem}
+
+@media (max-width:480px){
+	.wrap{padding:0.75rem}
+	nav a{display:block;margin:0.4rem 0}
+}
