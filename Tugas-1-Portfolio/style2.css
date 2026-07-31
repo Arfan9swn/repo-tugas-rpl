@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: url('image/Cloud.jpeg');
+  background-size: cover;
+}
+
+/* Header/Blog Title */
+.header { 
+  padding: 45px; 
+  text-align: center;
+  background-image: url('image/Header_Background.jpeg');
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #222222;
+}
+
+.header h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 6px rgb(0, 0, 0);
+  font-family: monospace;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #222222;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #dddddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  transition: 0.4s;
+  background-color: #797979;
+  color: #dddddd;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 70%;
+}
+
+.leftcolumn2 {   
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+
+.rightcolumn2  {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+h2 {
+  font-family: verdana;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-bottom: 33.5px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-image: url('image/Bg_Horizontal.jpeg');
+  background-size: cover;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: helvetica;
+  color: Black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #222222;
+  text-align: center;
+  display: felx;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.card img {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #222222;
+  color: #ddd;
+  margin-top: 20px;
+}
+
+.socialicon {
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.socialicon a {
+  padding: 15px;
+  background-color: rgb(235, 235, 235);
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.socialicon a i {
+  font-size: 30px;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialicon a i:hover {
+  color: #a3a3a3;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.pembuat {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.creator img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #222222;
+}
+
+p {
+  font-family: helvetica;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 50px;
+}
+
+li {
+  font-family: helvetica;
+  text-align: left;
+  margin-right: 50px;
+  margin-bottom: 27.5px;
+}
+
+/* Skill Bars */
+.skill-bar {
+  margin-top: 25px;
+  text-align: left;
+  font-family: helvetica;
+}
+
+.skill-bar span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.progress {
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.progress.html { width: 20%; background: #e44d26; }
+.progress.css { width: 10%; background: #2965f1; }
+.progress.js { width: 3%; background: #f7df1e; color: #222; }
+.progress.python { width: 10%; background: #306998; }
+
+body {
+  animation: fadeIn 0.7s;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  border-radius: 50%;
+  background: #222222;
+  color: #ffffff;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: 0.3s ease;
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.progress {
+  transition: width 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the
+two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the
+navigation links stack on top of each other instead of next to each other
+*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
