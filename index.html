@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Nabhan Putra</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            color:#333;
+        }
+
+        header{
+            background:#222;
+            color:white;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:1000;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 10%;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            transition:.3s;
+        }
+
+        nav ul li a:hover{
+            color:#00bcd4;
+        }
+
+        section{
+            padding:100px 10%;
+        }
+
+        #home{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:white;
+            text-align:center;
+        }
+
+        #home h1{
+            font-size:50px;
+        }
+
+        #home p{
+            margin:20px 0;
+            font-size:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 25px;
+            background:#00bcd4;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .about{
+            text-align:center;
+            line-height:30px;
+        }
+
+        .skill-box{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .skill{
+            background:white;
+            width:180px;
+            padding:25px;
+            border-radius:10px;
+            text-align:center;
+            box-shadow:0 5px 10px rgba(0,0,0,.1);
+        }
+
+        .project-box{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .project{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 5px 10px rgba(0,0,0,.1);
+        }
+
+        .contact{
+            text-align:center;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<h2>Nabhan.</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#skill">Skill</a></li>
+<li><a href="#project">Project</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section id="home">
+
+<h1>Halo, Saya Nabhan Putra</h1>
+
+<p>Front-End Developer | UI Designer | Mahasiswa</p>
+
+<a href="#project" class="btn">Lihat Project</a>
+
+</section>
+
+<section id="about">
+
+<h2>Tentang Saya</h2>
+
+<div class="about">
+
+<p>
+Saya adalah seorang mahasiswa yang memiliki minat dalam
+pengembangan website menggunakan HTML, CSS, JavaScript,
+Bootstrap, Laravel, dan MySQL. Saya senang mempelajari
+teknologi baru dan terus mengembangkan kemampuan
+di bidang web development.
+</p>
+
+</div>
+
+</section>
+
+<section id="skill">
+
+<h2>Skill</h2>
+
+<div class="skill-box">
+
+<div class="skill">
+<h3>HTML</h3>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+</div>
+
+<div class="skill">
+<h3>Bootstrap</h3>
+</div>
+
+<div class="skill">
+<h3>Laravel</h3>
+</div>
+
+<div class="skill">
+<h3>MySQL</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="project">
+
+<h2>Project</h2>
+
+<div class="project-box">
+
+<div class="project">
+<h3>Website Coffee Shop</h3>
+<p>Membuat website coffee shop menggunakan HTML, CSS, dan Bootstrap.</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Website portofolio pribadi yang responsif dan modern.</p>
+</div>
+
+<div class="project">
+<h3>CRUD Laravel</h3>
+<p>Aplikasi CRUD menggunakan Laravel dan MySQL.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Kontak</h2>
+
+<div class="contact">
+
+<p>Email : nabhan@email.com</p>
+<p>WhatsApp : 08xxxxxxxxxx</p>
+<p>Instagram : @nbhnngts_</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p> 2026 Nabhan Putra</p>
+
+</footer>
+
+</body>
+</html>
