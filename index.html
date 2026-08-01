@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="#home" class="brand">Tama</a>
+      <nav class="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Halo, saya</p>
+          <h1>Frontend Developer yang fokus pada pengalaman pengguna.</h1>
+          <p class="lead">
+            Saya membuat website modern, cepat, dan nyaman dilihat dengan desain yang menarik.
+          </p>
+          <div class="hero-badges">
+            <span>🌐 Web Developer</span>
+            <span>⚡ Fast & Responsive</span>
+            <span>🎨 UI Design</span>
+          </div>
+          <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+          <p id="status" class="status">Selamat datang di portofolio saya.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-frame">
+            <img
+              src="beach.jpg"
+              alt="Foto owner"
+            />
+          </div>
+
+          <div class="hero-card">
+            <h3>Keahlian Saya</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>UI/UX Basics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya adalah pengembang web yang senang membangun antarmuka yang bersih,
+          modern, dan mudah digunakan. Saat ini saya sedang fokus pada pengembangan
+          website yang responsif dan estetis.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Proyek Terbaru</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Landing Page</h3>
+            <p>Desain landing page yang elegan dan cocok untuk branding produk.</p>
+          </article>
+          <article class="project-card">
+            <h3>Dashboard Sederhana</h3>
+            <p>Antarmuka dashboard ringan dengan tampilan yang rapi dan informatif.</p>
+          </article>
+          <article class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Website pribadi yang menampilkan karya, skill, dan informasi kontak.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>Hubungi Saya</h2>
+        <p>Email: pratamaingkiriwang1@gmail.com</p>
+        <p>Instagram: @ad.tmaa</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Tama. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
