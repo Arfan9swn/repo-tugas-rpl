@@ -1,31 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio jose</title>
+    <title>Jose Ahmad Taya | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="r-t.jpg" type="image/x-icon">
+    <!-- Font Inter dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>PORTFOLIO</h1>
-            <h2>jose</h2>
-        </div>
-        <div class="content">
-            <div class="profile">
-                <img src="r-t.jpg" alt="Profile Picture">
-                <p>Halo aku jose (masi proses)</p>
+
+    <!-- Header / Navigasi -->
+    <header>
+        <div class="logo">Jose<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting">Halo, saya</p>
+            <h1>Jose Ahmad Taya</h1>
+            <h2 class="typing-text">Web Developer & Tech Enthusiast</h2>
+            <p class="description">
+                Fokus membangun aplikasi web yang efisien, responsif, dan mudah digunakan.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">Lihat Proyek</a>
+                <a href="#contact" class="btn secondary-btn">Hubungi Saya</a>
             </div>
-            <div class="projects">
-                <h3>My Projects</h3>
-                <ul>
-                    <li><a href="#">Project 1</a></li>
-                    <li><a href="#">Project 2</a></li>
-                    <li><a href="#">Project 3</a></li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Saya adalah seorang pengembang web yang tertarik pada pengembangan *front-end* maupun *back-end*. Suka mempelajari teknologi baru, memecahkan masalah melalui kode, dan merancang antarmuka yang bersih.
+                </p>
+            </div>
+            <div class="skills">
+                <h3>Keahlian Utamaku</h3>
+                <div class="skill-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>PostgreSQL</span>
+                    <span>Git & GitHub</span>
+                    <span>Linux / Debian</span>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Proyek Pilihan</h2>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Sistem Informasi Portal Web</h3>
+                    <p>Aplikasi web interaktif dengan fitur berita, widget cuaca terintegrasi, dan peta lokasi.</p>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>PostgreSQL</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Konfigurasi Server & Jaringan</h3>
+                    <p>Pengaturan infrastruktur server menggunakan Linux Debian, mencakup Nginx, Samba, dan FTP.</p>
+                    <div class="project-tech">
+                        <span>Debian</span>
+                        <span>Nginx</span>
+                        <span>Linux CLI</span>
+                    </div>
+                    <a href="#" class="project-link">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Aplikasi Manajemen Data</h3>
+                    <p>Platform backend untuk mengolah data dinamis secara aman dan cepat.</p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL / Postgres</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a href="#" class="project-link">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p>Apakah Anda memiliki proyek atau ingin berdiskusi? Jangan ragu untuk menghubungi!</p>
+        
+        <div class="contact-links">
+            <a href="mailto:jose@example.com" class="btn primary-btn">Kirim Email</a>
+            <div class="socials">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jose Ahmad Taya. Dibuat dengan HTML, CSS, & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
