@@ -1,28 +1,62 @@
-// Tombol menuju bagian About
-document.getElementById("btnAbout").addEventListener("click", function () {
-  document.getElementById("about").scrollIntoView({
-    behavior: "smooth"
-  });
+const btnAbout = document.getElementById("btnAbout");
+
+if (btnAbout) {
+    btnAbout.addEventListener("click", function () {
+        document.getElementById("about").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+}
+
+const navLinks = document.querySelectorAll("nav ul li a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
 });
 
-// Efek muncul saat scroll
-const cards = document.querySelectorAll(".project-card");
+const projectCards = document.querySelectorAll(".project-card");
 
-window.addEventListener("scroll", function () {
-  cards.forEach(card => {
-    const position = card.getBoundingClientRect().top;
-    const screen = window.innerHeight;
+const showCards = () => {
+    projectCards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
 
-    if (position < screen - 100) {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }
-  });
+        if (cardTop < windowHeight - 100) {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
+};
+
+projectCards.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(50px)";
+    card.style.transition = "0.6s ease";
 });
 
-// Set awal
-cards.forEach(card => {
-  card.style.opacity = "0";
-  card.style.transform = "translateY(50px)";
-  card.style.transition = "0.6s";
-});
+window.addEventListener("scroll", showCards);
+window.addEventListener("load", showCards);
+
+const profileImg = document.querySelector(".hero-image img");
+
+if (profileImg) {
+    profileImg.addEventListener("mouseenter", () => {
+        profileImg.style.transform = "scale(1.05)";
+        profileImg.style.transition = "0.3s";
+    });
+
+    profileImg.addEventListener("mouseleave", () => {
+        profileImg.style.transform = "scale(1)";
+    });
+}
