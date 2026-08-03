@@ -1,1 +1,0 @@
-ini dihapus aja salah push aku
