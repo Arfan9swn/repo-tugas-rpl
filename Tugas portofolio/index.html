@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rasya Ramadansyah — Portofolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Rasya<span>.</span></div>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#skill">Skill</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-img">RR</div>
+  <h1>Rasya Ramadansyah</h1>
+  <p class="subtitle">Siswa Rekayasa Perangkat Lunak (RPL) — SMKN 2 Balikpapan</p>
+</section>
+
+<section id="tentang" class="section">
+  <h2>Tentang Saya</h2>
+  <div class="bio-card">
+    <ul class="bio-list">
+      <li><span>Nama Lengkap</span><b>Rasya Ramadansyah</b></li>
+      <li><span>Tanggal Lahir</span><b>05 September 2008</b></li>
+      <li><span>Jurusan</span><b>Rekayasa Perangkat Lunak (RPL)</b></li>
+      <li><span>Sekolah</span><b>SMKN 2 Balikpapan</b></li>
+    </ul>
+    <p class="bio-text">
+      Halo! Saya Rasya, siswa jurusan RPL yang tertarik belajar membuat website dan aplikasi.
+      Website ini saya buat sebagai portofolio sederhana untuk menampilkan data diri dan kemampuan saya.
+    </p>
+  </div>
+</section>
+
+<section id="skill" class="section">
+  <h2>Skill</h2>
+  <div class="skill-grid">
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">Basis Data</div>
+  </div>
+</section>
+
+<section id="kontak" class="section">
+  <h2>Kontak</h2>
+  <div class="contact-card">
+    <p>Ingin menghubungi saya? Silakan kirim pesan lewat form di bawah.</p>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nama kamu" required>
+      <input type="email" id="email" placeholder="Email kamu" required>
+      <textarea id="message" rows="4" placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim</button>
+      <p class="status" id="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Rasya Ramadansyah</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
