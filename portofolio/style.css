@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+body{
+    background-color: #FFDD9C;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #FB6C00;
+    color: black;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.welkam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.journey{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dokums{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dokumss{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.dokumss::-webkit-scrollbar{
+    display: none;
+}
+
+.slide{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+.slide img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.kontaks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.kontakss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ke-kontaks{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-kontaks{
+    width: 35px;
+    height: auto;
+}
