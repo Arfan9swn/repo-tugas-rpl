@@ -18,14 +18,14 @@ body {
 
 nav {
   float: left;
-  width: 350px;
+  width: 330px;
   height: 350px;
 }
 
 article {
   float: right;
   padding: 20px;
-  width: 900px;
+  width: 910px;
   background-color: #fff7c2;
   height: 350px;
   font-family: AlanV; 
