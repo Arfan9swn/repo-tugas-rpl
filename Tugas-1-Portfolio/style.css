@@ -1,0 +1,308 @@
+/* css nya ramzi, jangan diubah2 nanti berantakan wkwk */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: white;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* NAVBAR, background merah kaya di gambar */
+.navbar {
+  background-color: #b8231f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 14px 20px;
+  border-radius: 40px;
+  margin: 15px 25px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.navbar a.aktif {
+  color: #f5a623;
+}
+.navbar .logobulet {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #eaeaea;
+}
+
+/* HERO */
+.hero {
+  padding: 30px 40px 30px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.hero .bulet-abu {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  width: 220px;
+  height: 200px;
+  border-radius: 40px;
+  background-color: #d9d9d9;
+  z-index: 0;
+}
+.hero h1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  max-width: 60%;
+}
+.hero h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+}
+.judul-website {
+  display: flex;
+  gap: 6px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.judul-website span {
+  border: 2px solid white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.hero p {
+  margin-top: 20px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #cfcfcf;
+  max-width: 650px;
+  position: relative;
+  z-index: 1;
+}
+
+/* judul section pake kotak oren, biar seragam sama gambar */
+.judul-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+.kotak-icon {
+  width: 34px;
+  height: 34px;
+  background-color: #ef8c1e;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.judul-section h2 {
+  font-size: 20px;
+}
+
+/* SECTION PENGALAMAN - background merah */
+.pengalaman {
+  background-color: #b8231f;
+  padding: 35px 40px;
+  margin-top: 10px;
+}
+.garis-waktu {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  padding-left: 5px;
+}
+.titik {
+  width: 10px;
+  height: 10px;
+  background-color: #f5a623;
+  border-radius: 50%;
+  margin-top: 5px;
+  position: relative;
+}
+.titik::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  width: 2px;
+  height: 100px;
+  background-color: #7a1917;
+}
+.tahun {
+  font-size: 12px;
+  color: #ffd9d9;
+}
+.perusahaan {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px 0 12px 0;
+}
+.isi-pengalaman ul {
+  padding-left: 18px;
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: #ffe6e6;
+}
+
+/* SECTION PROYEK */
+.proyek {
+  padding: 40px;
+  background-color: #1c1c1c;
+}
+.kartu-proyek {
+  background-color: #b8231f;
+  padding: 20px;
+  border-radius: 14px;
+  width: 260px;
+  position: relative;
+  box-shadow: 4px 4px 0px #7a1917;
+}
+.kotak-kecil {
+  width: 24px;
+  height: 24px;
+  background-color: #f5a623;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.kartu-proyek h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.kartu-proyek p {
+  font-size: 12px;
+  color: #ffe6e6;
+  line-height: 1.6;
+}
+
+/* SECTION PENDIDIKAN & BAHASA */
+.pendidikan-bahasa {
+  display: flex;
+  padding: 40px;
+  gap: 60px;
+  flex-wrap: wrap;
+  background-color: #b8231f;
+}
+.kolom-pendidikan, .kolom-bahasa {
+  flex: 1;
+  min-width: 200px;
+}
+.riwayat {
+  border-left: 3px solid #7a1917;
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+.riwayat .thn {
+  font-size: 11px;
+  color: #ffd9d9;
+}
+.riwayat .nama-sekolah {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 3px 0;
+}
+.riwayat .jurusan {
+  font-size: 11px;
+  color: #ffe6e6;
+}
+.list-bahasa {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.bahasa-item {
+  min-width: 130px;
+}
+.nama-bahasa {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.ket-bahasa {
+  font-size: 11px;
+  color: #ffe6e6;
+  line-height: 1.5;
+}
+
+/* FOOTER / KONTAK */
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 45px 20px;
+}
+footer h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+/* ini keknya kelupaan dihapus stylenya jadi ttp biru kaya link bawaan browser */
+.teks-link {
+  display: inline-block;
+  color: #6ea8fe;
+  text-decoration: underline;
+  font-size: 12.5px;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+.kotak-kontak {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.kontak-item {
+  background-color: #b8231f;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 13px;
+  min-width: 180px;
+}
+.label-kontak {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: white;
+}
+.isi-kontak {
+  font-weight: bold;
+  font-size: 13px;
+}
+/* email ikutan jadi biru krn dipasang tag a, mager benerin */
+.isi-kontak-link {
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* dikit dikit responsive biar ga hancur di hp */
+@media(max-width:700px){
+  .navbar{ gap:15px; }
+  .navbar a{ font-size:11px; }
+  .hero h1{ max-width:100%; }
+  .hero .bulet-abu{ display:none; }
+  .pendidikan-bahasa{ gap:25px; }
+}
